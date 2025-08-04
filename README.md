@@ -25,7 +25,7 @@ Select the extension folder containing manifest.json and rules.json
 
 🔒 Customizing Blocked Websites
 Edit rules.json to add or remove domains. Each domain has its own rule object:
-
+'''
 json
 {
   "id": 4,
@@ -36,6 +36,7 @@ json
     "resourceTypes": ["main_frame"]
   }
 }
+'''
 Make sure each rule has a unique id.
 
 📁 File Structure
