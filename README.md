@@ -1,34 +1,50 @@
-🚫 WebsiteBlocker
+Here’s a polished and professional `README.md` file for your **WebsiteBlocker** Chrome extension:
+
+---
+
+````markdown
+# 🚫 WebsiteBlocker
+
 A lightweight Chrome extension to block distracting or unwanted websites. Ideal for productivity, parental control, or simply reclaiming your focus online.
 
-🚀 Features
-🔒 Block access to specific domains (e.g., Facebook, YouTube, Instagram)
+## 🚀 Features
 
-⚡ Powered by Chrome's declarativeNetRequest API for performance and security
+- 🔒 **Block access to specific domains**  
+  Easily block websites like Facebook, YouTube, Instagram, and more.
 
-📦 Minimal and efficient — no background scripts needed
+- ⚡ **Fast and Secure**  
+  Powered by Chrome's `declarativeNetRequest` API — no background scripts needed.
 
-🛠️ Fully customizable blocklist via rules.json
+- 📦 **Minimal and Efficient**  
+  Lightweight with zero bloat; built for speed and privacy.
 
-🧱 Installation
-Clone or download this repository.
+- 🛠️ **Customizable Blocklist**  
+  Configure blocked websites directly through a `rules.json` file.
 
-Open chrome://extensions/ in your Chrome browser.
+---
 
-Enable Developer Mode (toggle in the top right corner).
+## 🧱 Installation
 
-Click Load unpacked.
+1. **Clone or download** this repository to your local machine.
 
-Select the extension folder containing manifest.json and rules.json.
+2. Open `chrome://extensions/` in your Chrome browser.
 
-🔧 Customizing Blocked Websites
+3. **Enable Developer Mode** (toggle in the top right corner).
+
+4. Click **"Load unpacked"**.
+
+5. Select the extension folder that contains both `manifest.json` and `rules.json`.
+
+---
+
+## 🔧 Customizing Blocked Websites
+
 To block additional websites:
 
-Open the rules.json file.
+1. Open the `rules.json` file.
+2. Add a new rule using this format:
 
-Add a new rule for each domain using this format:
-
-json
+```json
 {
   "id": 4,
   "priority": 1,
@@ -38,19 +54,37 @@ json
     "resourceTypes": ["main_frame"]
   }
 }
-📌 Each rule must have a unique "id" to avoid conflicts.
+````
 
-📁 File Structure
-plaintext
+📌 **Note:** Each rule must have a unique `"id"` to avoid conflicts.
+
+---
+
+## 📁 File Structure
+
+```
 📂 site-blocker-extension
 ├── manifest.json
 └── rules.json
-💡 Future Enhancements
-⏱️ Time-based site blocking (e.g., block during work hours)
+```
 
-🧩 User interface for managing the blocklist dynamically
+---
 
-🔄 Sync rules across multiple devices
+## 💡 Future Enhancements
 
-📄 License
-This project is licensed under the MIT License.
+* ⏱️ Time-based site blocking (e.g., block during work hours)
+* 🧩 User interface for managing the blocklist dynamically
+* 🔄 Sync rules across multiple devices using Chrome Sync
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+```
+
+---
+
+Let me know if you’d like me to generate the actual `manifest.json` and `rules.json` templates too.
+```
